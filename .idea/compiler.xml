@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../gradle/gradle-8.1.1/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="ms_products.reactor-rest-consumer.test" />
+        <module name="ms_products.app.test" />
+        <module name="ms_products.usecase.test" />
+        <module name="ms_products.model.test" />
+        <module name="ms_products.r2dbc-postgresql.test" />
+        <module name="ms_products.reactor-rest-servicios.test" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../gradle/gradle-8.1.1/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/3.1.0/6364a0d4d16f77885a86a51906d68107674eebbd/spring-boot-configuration-processor-3.1.0.jar" />
+          <entry name="$PROJECT_DIR$/../gradle/gradle-8.1.1/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="ms_products.app.main" />
+        <module name="ms_products.usecase.main" />
+        <module name="ms_products.model.main" />
+        <module name="ms_products.r2dbc-postgresql.main" />
+        <module name="ms_products.reactor-rest-servicios.main" />
+        <module name="ms_products.reactor-rest-consumer.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ms_products.buildSrc" target="17" />
+      <module name="ms_products.buildSrc.main" target="17" />
+      <module name="ms_products.buildSrc.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authorization-server" options="-parameters" />
+    </option>
+  </component>
+</project>

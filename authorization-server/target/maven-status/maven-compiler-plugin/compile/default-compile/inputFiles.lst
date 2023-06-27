@@ -1,0 +1,9 @@
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\Main.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\domain\UserDetailsImpl.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\config\AuthorizationServerConfig.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\repository\UserAccountRepository.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\config\RoutesConfig.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\service\UserDetailsServiceImpl.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\config\WebSecurityConfig.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\domain\UserAccount.java
+C:\prueba_tenica\authorization-server\src\main\java\com\emyasa\domain\UserAccountRole.java

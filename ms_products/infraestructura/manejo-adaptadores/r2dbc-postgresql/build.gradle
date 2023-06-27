@@ -1,0 +1,9 @@
+dependencies {
+    implementation project(':model')
+    implementation group: 'org.postgresql', name: 'r2dbc-postgresql', version: '1.0.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
+    implementation group: 'org.hibernate', name: 'hibernate-validator', version: '8.0.0.Final'
+
+
+}
+

@@ -1,0 +1,39 @@
+Starting Gradle Daemon...
+Gradle Daemon started in 2 s 157 ms
+> Task :model:compileJava UP-TO-DATE
+> Task :model:processResources NO-SOURCE
+> Task :model:classes UP-TO-DATE
+> Task :model:jar UP-TO-DATE
+> Task :r2dbc-postgresql:compileJava UP-TO-DATE
+> Task :r2dbc-postgresql:processResources NO-SOURCE
+> Task :r2dbc-postgresql:classes UP-TO-DATE
+> Task :r2dbc-postgresql:jar UP-TO-DATE
+> Task :usecase:compileJava UP-TO-DATE
+> Task :usecase:processResources NO-SOURCE
+> Task :usecase:classes UP-TO-DATE
+> Task :usecase:jar UP-TO-DATE
+> Task :reactor-rest-servicios:compileJava UP-TO-DATE
+> Task :reactor-rest-servicios:processResources NO-SOURCE
+> Task :reactor-rest-servicios:classes UP-TO-DATE
+> Task :reactor-rest-servicios:jar UP-TO-DATE
+> Task :app:compileJava UP-TO-DATE
+> Task :app:processResources UP-TO-DATE
+> Task :app:classes UP-TO-DATE
+
+> Task :app:App.main()
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-05-30T20:57:35.443-05:00  INFO 23364 --- [           main] org.gestionlogistica.App                 : Starting App using Java 17.0.2 with PID 23364 (C:\proyecto_logistica\be_gestion_logistica\apps\app\build\classes\java\main started by postgres in C:\proyecto_logistica\be_gestion_logistica)
+2023-05-30T20:57:35.448-05:00  INFO 23364 --- [           main] org.gestionlogistica.App                 : No active profile set, falling back to 1 default profile: "default"
+2023-05-30T20:57:37.264-05:00  INFO 23364 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2023-05-30T20:57:37.687-05:00  INFO 23364 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 413 ms. Found 3 R2DBC repository interfaces.
+2023-05-30T20:57:39.799-05:00  INFO 23364 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-30T20:57:41.572-05:00  INFO 23364 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8097
+2023-05-30T20:57:41.601-05:00  INFO 23364 --- [           main] org.gestionlogistica.App                 : Started App in 6.873 seconds (process running for 10.582)

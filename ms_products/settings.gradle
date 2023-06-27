@@ -1,0 +1,20 @@
+plugins {
+    // Apply the foojay-resolver plugin to allow automatic download of JDKs
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.4.0'
+}
+
+rootProject.name = 'ms_products'
+include ':app'
+project(':app').projectDir = file('./apps/app')
+include ':model'
+project(':model').projectDir = file('./dominio/model')
+include ':usecase'
+project(':usecase').projectDir = file('./dominio/usecase')
+include ':reactor-rest-consumer'
+project(':reactor-rest-consumer').projectDir = file('./infraestructura/manejo-adaptadores/reactor-rest-consumer')
+include ':reactor-rest-servicios'
+project(':reactor-rest-servicios').projectDir = file('./infraestructura/puntos-entrada/reactor-rest-servicios')
+include ':r2dbc-postgresql'
+project(':r2dbc-postgresql').projectDir = file('./infraestructura/manejo-adaptadores/r2dbc-postgresql')
+
+

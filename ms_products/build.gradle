@@ -1,0 +1,36 @@
+buildscript {
+    ext {
+
+        springBootVersion = '3.1.0'
+        springDependencyManagement = '1.1.0'
+        sonarVersion = '3.3'
+        lombokVersion = '1.18.22'
+        springdocVersion = '1.6.+'
+        gsonVersion = '2.10.1'
+        jacocoVersion = '0.8.5'
+    }
+}
+
+plugins {
+
+    id 'org.springframework.boot' version "${springBootVersion}"
+    id 'org.sonarqube' version "${sonarVersion}"
+    id 'jacoco'
+    id 'java'
+    id 'idea'
+}
+
+
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+bootJar {
+    mainClass = 'org.gestionlogistica.app.App'
+}
+
+
+apply from: './main.gradle'

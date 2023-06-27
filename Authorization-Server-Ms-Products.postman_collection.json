@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "8997701d-3a4e-46f8-8bc8-2b699966570f",
+		"name": "Authorization-Server-Ms-Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17996574"
+	},
+	"item": [
+		{
+			"name": "request_token",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"user-agent": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "registration-client",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "registration-client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "username",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "password",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client_secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "grant_type",
+						"value": "client_credentials",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic cmVnaXN0cmF0aW9uLWNsaWVudDpzZWNyZXQ=",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "registration-client",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "usernameq",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "secret",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.10.29:9000/oauth2/token",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"29"
+					],
+					"port": "9000",
+					"path": [
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "registration-client",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "secret",
+							"disabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all_products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJiNmQ3NDYwNC1mODEzLTQyY2UtYmYwYS01YWZiYjQ5YzM3NzYiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJyZWdpc3RyYXRpb24tY2xpZW50IiwiYXVkIjoicmVnaXN0cmF0aW9uLWNsaWVudCIsIm5iZiI6MTY4NzgwOTU0OCwic2NvcGUiOlsie25vb3B9Y2xpZW50LmNyZWF0ZSJdLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6OTAwMCIsImV4cCI6MTY4Nzg5NTk0OCwiaWF0IjoxNjg3ODA5NTQ4fQ.HxpDhpmJhhzEnS_sJjzQFok9pandsB7geDWdKc1sPkYOVPCPU1sYnphlb-pQ1CZcLd2_O2jbNiE1wslv9efq1BC9je0FInrKFbARHcfbrCmqVjOqElLjoWo83rPxC4oFb0dHIoVCuTIeZWP-irSGc2-dRycoVQmb3ZKNzlp6gMKPtpfB4TftsPelbNGYGWhQ670_BVfU5-kqJ_wlSRwi88JrodclTUz6x8ga0bB1bjIyrQ_GDW603_PrZyw6_K00X_yl2xkiCQ-NVLTtJu9VwX31UQU2qAZ407Bwev4bBJ3_YxNcqlcR0oD6-7Um7KqxcBM5SBlMJn0CYzqaNuDBmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products_by_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJiNmQ3NDYwNC1mODEzLTQyY2UtYmYwYS01YWZiYjQ5YzM3NzYiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJyZWdpc3RyYXRpb24tY2xpZW50IiwiYXVkIjoicmVnaXN0cmF0aW9uLWNsaWVudCIsIm5iZiI6MTY4NzgwOTU0OCwic2NvcGUiOlsie25vb3B9Y2xpZW50LmNyZWF0ZSJdLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6OTAwMCIsImV4cCI6MTY4Nzg5NTk0OCwiaWF0IjoxNjg3ODA5NTQ4fQ.HxpDhpmJhhzEnS_sJjzQFok9pandsB7geDWdKc1sPkYOVPCPU1sYnphlb-pQ1CZcLd2_O2jbNiE1wslv9efq1BC9je0FInrKFbARHcfbrCmqVjOqElLjoWo83rPxC4oFb0dHIoVCuTIeZWP-irSGc2-dRycoVQmb3ZKNzlp6gMKPtpfB4TftsPelbNGYGWhQ670_BVfU5-kqJ_wlSRwi88JrodclTUz6x8ga0bB1bjIyrQ_GDW603_PrZyw6_K00X_yl2xkiCQ-NVLTtJu9VwX31UQU2qAZ407Bwev4bBJ3_YxNcqlcR0oD6-7Um7KqxcBM5SBlMJn0CYzqaNuDBmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products_delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJiNmQ3NDYwNC1mODEzLTQyY2UtYmYwYS01YWZiYjQ5YzM3NzYiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJyZWdpc3RyYXRpb24tY2xpZW50IiwiYXVkIjoicmVnaXN0cmF0aW9uLWNsaWVudCIsIm5iZiI6MTY4NzgwOTU0OCwic2NvcGUiOlsie25vb3B9Y2xpZW50LmNyZWF0ZSJdLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6OTAwMCIsImV4cCI6MTY4Nzg5NTk0OCwiaWF0IjoxNjg3ODA5NTQ4fQ.HxpDhpmJhhzEnS_sJjzQFok9pandsB7geDWdKc1sPkYOVPCPU1sYnphlb-pQ1CZcLd2_O2jbNiE1wslv9efq1BC9je0FInrKFbARHcfbrCmqVjOqElLjoWo83rPxC4oFb0dHIoVCuTIeZWP-irSGc2-dRycoVQmb3ZKNzlp6gMKPtpfB4TftsPelbNGYGWhQ670_BVfU5-kqJ_wlSRwi88JrodclTUz6x8ga0bB1bjIyrQ_GDW603_PrZyw6_K00X_yl2xkiCQ-NVLTtJu9VwX31UQU2qAZ407Bwev4bBJ3_YxNcqlcR0oD6-7Um7KqxcBM5SBlMJn0CYzqaNuDBmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products_create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJiNmQ3NDYwNC1mODEzLTQyY2UtYmYwYS01YWZiYjQ5YzM3NzYiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJyZWdpc3RyYXRpb24tY2xpZW50IiwiYXVkIjoicmVnaXN0cmF0aW9uLWNsaWVudCIsIm5iZiI6MTY4NzgwOTU0OCwic2NvcGUiOlsie25vb3B9Y2xpZW50LmNyZWF0ZSJdLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6OTAwMCIsImV4cCI6MTY4Nzg5NTk0OCwiaWF0IjoxNjg3ODA5NTQ4fQ.HxpDhpmJhhzEnS_sJjzQFok9pandsB7geDWdKc1sPkYOVPCPU1sYnphlb-pQ1CZcLd2_O2jbNiE1wslv9efq1BC9je0FInrKFbARHcfbrCmqVjOqElLjoWo83rPxC4oFb0dHIoVCuTIeZWP-irSGc2-dRycoVQmb3ZKNzlp6gMKPtpfB4TftsPelbNGYGWhQ670_BVfU5-kqJ_wlSRwi88JrodclTUz6x8ga0bB1bjIyrQ_GDW603_PrZyw6_K00X_yl2xkiCQ-NVLTtJu9VwX31UQU2qAZ407Bwev4bBJ3_YxNcqlcR0oD6-7Um7KqxcBM5SBlMJn0CYzqaNuDBmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n\r\n        \"nombre\": \"Torre Gamer\", \r\n\r\n        \"precio\": 3000000\r\n    \r\n}    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8097/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products_update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJiNmQ3NDYwNC1mODEzLTQyY2UtYmYwYS01YWZiYjQ5YzM3NzYiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJyZWdpc3RyYXRpb24tY2xpZW50IiwiYXVkIjoicmVnaXN0cmF0aW9uLWNsaWVudCIsIm5iZiI6MTY4NzgwOTU0OCwic2NvcGUiOlsie25vb3B9Y2xpZW50LmNyZWF0ZSJdLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6OTAwMCIsImV4cCI6MTY4Nzg5NTk0OCwiaWF0IjoxNjg3ODA5NTQ4fQ.HxpDhpmJhhzEnS_sJjzQFok9pandsB7geDWdKc1sPkYOVPCPU1sYnphlb-pQ1CZcLd2_O2jbNiE1wslv9efq1BC9je0FInrKFbARHcfbrCmqVjOqElLjoWo83rPxC4oFb0dHIoVCuTIeZWP-irSGc2-dRycoVQmb3ZKNzlp6gMKPtpfB4TftsPelbNGYGWhQ670_BVfU5-kqJ_wlSRwi88JrodclTUz6x8ga0bB1bjIyrQ_GDW603_PrZyw6_K00X_yl2xkiCQ-NVLTtJu9VwX31UQU2qAZ407Bwev4bBJ3_YxNcqlcR0oD6-7Um7KqxcBM5SBlMJn0CYzqaNuDBmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"DESKTOP HP PAVILLION\",\r\n    \"precio\": 1500000\r\n}    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8097/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

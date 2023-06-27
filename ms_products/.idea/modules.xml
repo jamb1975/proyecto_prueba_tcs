@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms_products.iml" filepath="$PROJECT_DIR$/.idea/modules/ms_products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/app/ms_products.app.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/app/ms_products.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/app/ms_products.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/app/ms_products.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/app/ms_products.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/app/ms_products.app.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms_products.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/ms_products.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms_products.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms_products.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms_products.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ms_products.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms_products.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms_products.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dominio/model/ms_products.model.iml" filepath="$PROJECT_DIR$/.idea/modules/dominio/model/ms_products.model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dominio/model/ms_products.model.main.iml" filepath="$PROJECT_DIR$/.idea/modules/dominio/model/ms_products.model.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dominio/model/ms_products.model.test.iml" filepath="$PROJECT_DIR$/.idea/modules/dominio/model/ms_products.model.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/r2dbc-postgresql/ms_products.r2dbc-postgresql.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/r2dbc-postgresql/ms_products.r2dbc-postgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/r2dbc-postgresql/ms_products.r2dbc-postgresql.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/r2dbc-postgresql/ms_products.r2dbc-postgresql.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/r2dbc-postgresql/ms_products.r2dbc-postgresql.test.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/r2dbc-postgresql/ms_products.r2dbc-postgresql.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/reactor-rest-consumer/ms_products.reactor-rest-consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/reactor-rest-consumer/ms_products.reactor-rest-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/reactor-rest-consumer/ms_products.reactor-rest-consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/reactor-rest-consumer/ms_products.reactor-rest-consumer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/reactor-rest-consumer/ms_products.reactor-rest-consumer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/manejo-adaptadores/reactor-rest-consumer/ms_products.reactor-rest-consumer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/puntos-entrada/reactor-rest-servicios/ms_products.reactor-rest-servicios.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/puntos-entrada/reactor-rest-servicios/ms_products.reactor-rest-servicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/puntos-entrada/reactor-rest-servicios/ms_products.reactor-rest-servicios.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/puntos-entrada/reactor-rest-servicios/ms_products.reactor-rest-servicios.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura/puntos-entrada/reactor-rest-servicios/ms_products.reactor-rest-servicios.test.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura/puntos-entrada/reactor-rest-servicios/ms_products.reactor-rest-servicios.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms_products.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ms_products.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dominio/usecase/ms_products.usecase.iml" filepath="$PROJECT_DIR$/.idea/modules/dominio/usecase/ms_products.usecase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dominio/usecase/ms_products.usecase.main.iml" filepath="$PROJECT_DIR$/.idea/modules/dominio/usecase/ms_products.usecase.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dominio/usecase/ms_products.usecase.test.iml" filepath="$PROJECT_DIR$/.idea/modules/dominio/usecase/ms_products.usecase.test.iml" />
+    </modules>
+  </component>
+</project>

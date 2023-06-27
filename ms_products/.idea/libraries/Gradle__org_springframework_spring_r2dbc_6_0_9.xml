@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-r2dbc:6.0.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../gradle/gradle-8.1.1/caches/modules-2/files-2.1/org.springframework/spring-r2dbc/6.0.9/687fd5779f05f892857deaf540403baf6d232db6/spring-r2dbc-6.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../gradle/gradle-8.1.1/caches/modules-2/files-2.1/org.springframework/spring-r2dbc/6.0.9/c7ea2e483ed620ff38ceb4f770e136f2ce10bbdc/spring-r2dbc-6.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

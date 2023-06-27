@@ -1,0 +1,9 @@
+apply plugin: 'org.springframework.boot'
+dependencies {
+    implementation project(':model')
+    implementation project(':usecase')
+    implementation project(':r2dbc-postgresql')
+    implementation project(':reactor-rest-servicios')
+}
+
+
